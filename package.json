@@ -46,5 +46,8 @@
   "repository": {
     "type": "git",
     "url": "git@github.com:taniarascia/webpack-boilerplate"
+  },
+  "dependencies": {
+    "pixi.js": "^6.2.2"
   }
 }
