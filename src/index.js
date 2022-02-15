@@ -1,5 +1,6 @@
 // Test import of a JavaScript module
 import { example } from '@/js/example'
+import { AppView } from '@/js/minesweep'
 
 // Test import of an asset
 // import webpackLogo from '@/images/webpack-logo.svg'
@@ -14,6 +15,10 @@ import '@/styles/index.scss'
 const heading = document.createElement('h1')
 heading.textContent = example()
 
+const appView = AppView()
+
+console.log('App: ', AppView);
+
 // Test a background image url in CSS
 // const imageBackground = document.createElement('div')
 // imageBackground.classList.add('image')
@@ -24,4 +29,4 @@ heading.textContent = example()
 
 const app = document.querySelector('#root')
 // app.append(logo, heading, imageBackground, imagePublic)
-app.append(heading)
+app.append(heading, appView)
